@@ -9,26 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
-var app_component_1 = require('./app.component');
-var books_list_component_1 = require('./books/books-list/books-list.component');
-var truncate_pipe_1 = require('./shared/pipes/truncate.pipe');
-var AppModule = (function () {
-    function AppModule() {
+var TruncatePipe = (function () {
+    function TruncatePipe() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule,
-                forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent,
-                books_list_component_1.BooksListComponent,
-                truncate_pipe_1.TruncatePipe],
-            bootstrap: [app_component_1.AppComponent]
+    TruncatePipe.prototype.transform = function (input, limit) {
+        if (input)
+            return (input.length > length) ? input.substr(0, limit) + '...' : input;
+    };
+    TruncatePipe = __decorate([
+        core_1.Pipe({
+            name: 'limitChar'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], TruncatePipe);
+    return TruncatePipe;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.TruncatePipe = TruncatePipe;
+//# sourceMappingURL=truncate.pipe.js.map
