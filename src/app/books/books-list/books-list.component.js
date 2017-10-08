@@ -8,9 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var book_service_1 = require("../book.service");
+var core_1 = require('@angular/core');
+var book_service_1 = require('../book.service');
 var BooksListComponent = (function () {
     function BooksListComponent(_bookService) {
         this._bookService = _bookService;
@@ -31,15 +30,14 @@ var BooksListComponent = (function () {
     BooksListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;
     };
+    BooksListComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            templateUrl: 'books-list.component.html'
+        }), 
+        __metadata('design:paramtypes', [book_service_1.BookService])
+    ], BooksListComponent);
     return BooksListComponent;
 }());
-BooksListComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'bs-books-list',
-        templateUrl: 'books-list.component.html'
-    }),
-    __metadata("design:paramtypes", [book_service_1.BookService])
-], BooksListComponent);
 exports.BooksListComponent = BooksListComponent;
 //# sourceMappingURL=books-list.component.js.map

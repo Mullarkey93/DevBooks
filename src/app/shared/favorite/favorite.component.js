@@ -11,11 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var FavoriteComponent = (function () {
     function FavoriteComponent() {
-        this.fave = false;
         this.favoriteClicked = new core_1.EventEmitter();
+        this.fave = false;
     }
     FavoriteComponent.prototype.onClick = function () {
-        this.favoriteClicked.emit("The favorite " + this.favorite + " was saved");
+        this.favoriteClicked.emit("The favorite " + this.favorite + " was saved!");
         this.fave = !this.fave;
     };
     FavoriteComponent.prototype.isSelected = function (fave) {

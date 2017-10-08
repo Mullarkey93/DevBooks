@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.pageTitle = "Dev Book Store";
-        this.searchBox = '';
+var WelcomeComponent = (function () {
+    function WelcomeComponent() {
     }
-    AppComponent = __decorate([
+    WelcomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'bs-app',
-            templateUrl: 'app.component.html'
+            templateUrl: 'welcome.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], WelcomeComponent);
+    return WelcomeComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.WelcomeComponent = WelcomeComponent;
+//# sourceMappingURL=welcome.component.js.map
